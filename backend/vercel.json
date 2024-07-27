@@ -1,13 +1,22 @@
 {
-    "verson": 2,
-    "build": [
-        {"src": "*.js", "use": "@vercel/node"}
-    ],
-     "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/"
-        }
-     ]
-    
+  "buildCommand": "next build"
+}
+{
+  "cleanUrls": true
+}
+{
+  "crons": [
+    {
+      "path": "/api/every-minute",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/every-hour",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/every-day",
+      "schedule": "0 0 * * *"
+    }
+  ]
 }
