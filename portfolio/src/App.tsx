@@ -59,7 +59,7 @@ const App: React.FC = () => {
             Hi There,<br /> I'm Soubhik <span>Saha</span>
           </h2>
           <p>
-            I am into <span className="typing-text"></span>
+            I am into Web Devlopment <span className="typing-text"></span>
           </p>
           <a href="#about" className="btn">
             <span>About Me</span>
